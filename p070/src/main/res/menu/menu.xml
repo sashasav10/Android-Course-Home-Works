@@ -1,61 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:id="@+id/group_animal">
-        <item android:title="Животные"
-            android:id="@+id/menu_animal" >
+        <item
+            android:id="@+id/menu_animal"
+            android:title="Животные">
             <menu>
-                <item android:title="Рептилии"
-                    android:id="@+id/menu_reptiles">
+                <item
+                    android:id="@+id/menu_reptiles"
+                    android:title="Рептилии">
                     <menu>
-                        <item android:title="Крокодил"
-                            android:id="@+id/menu_crocodile">
-                        </item>
-                        <item android:title="Ящерицы"
-                            android:id="@+id/menu_lizard">
-                        </item>
+                        <item
+                            android:id="@+id/menu_crocodile"
+                            android:title="Крокодил"></item>
+                        <item
+                            android:id="@+id/menu_lizard"
+                            android:title="Ящерицы"></item>
                     </menu>
                 </item>
-                <item android:title="Птицы"
-                    android:id="@+id/menu_birds">
+                <item
+                    android:id="@+id/menu_birds"
+                    android:title="Птицы">
                     <menu>
-                        <item android:title="Ворона"
-                            android:id="@+id/menu_vorona">
-                        </item>
-                        <item android:title="Аист"
-                            android:id="@+id/menu_aist">
-                        </item>
+                        <item
+                            android:id="@+id/menu_vorona"
+                            android:title="Ворона"></item>
+                        <item
+                            android:id="@+id/menu_aist"
+                            android:title="Аист"></item>
                     </menu>
                 </item>
             </menu>
-            </item>
+        </item>
     </group>
-<group android:id="@+id/group_plant">
-    <item android:title="Растения"
-        android:id="@+id/menu_plant" >
-        <menu>
-            <item android:title="Деревья"
-                android:id="@+id/menu_tree">
-                <menu>
-                    <item android:title="Дуб"
-                        android:id="@+id/menu_dub">
-                    </item>
-                    <item android:title="Сосна"
-                        android:id="@+id/menu_sosna">
-                    </item>
-                </menu>
-            </item>
-            <item android:title="Кусты"
-                android:id="@+id/menu_kustu">
-                <menu>
-                    <item android:title="Малина"
-                        android:id="@+id/menu_malina">
-                    </item>
-                    <item android:title="Невеста"
-                        android:id="@+id/menu_nevesta">
-                    </item>
-                </menu>
-            </item>
-        </menu>
-    </item>
-</group>
+    <group android:id="@+id/group_plant">
+        <item
+            android:id="@+id/menu_plant"
+            android:title="Растения">
+            <menu>
+                <item
+                    android:id="@+id/menu_tree"
+                    android:title="Деревья">
+                    <menu>
+                        <item
+                            android:id="@+id/menu_dub"
+                            android:title="Дуб"></item>
+                        <item
+                            android:id="@+id/menu_sosna"
+                            android:title="Сосна"></item>
+                    </menu>
+                </item>
+                <item
+                    android:id="@+id/menu_kustu"
+                    android:title="Кусты">
+                    <menu>
+                        <item
+                            android:id="@+id/menu_malina"
+                            android:title="Малина"></item>
+                        <item
+                            android:id="@+id/menu_nevesta"
+                            android:title="Невеста"></item>
+                    </menu>
+                </item>
+            </menu>
+        </item>
+    </group>
 </menu>
