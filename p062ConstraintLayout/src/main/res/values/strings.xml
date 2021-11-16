@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Layout</string>
+    <string name="rent_from_r29_99">RENT FROM R29.99</string>
+    <string name="buy_from_r129_99">BUY FROM R129.99</string>
+    <string name="family">Family</string>
+    <string name="_71">71%</string>
+    <string name="similar">Similar</string>
+    <string name="ratings">Ratings</string>
+    <string name="movieDescription">Te story and characters you know and love come to spectacular life in the life-action adaption of Disney\'s animated classic Beauty and the Beast</string>
+    <string name="shortInfo">March 2017 PG 129 minutes</string>
+    <string name="movieName">Beauty and the Beast</string>
 </resources>

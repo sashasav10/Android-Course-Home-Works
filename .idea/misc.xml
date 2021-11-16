@@ -9,6 +9,10 @@
         <entry key="p061/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="p062ConstraintLayout/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="p062ConstraintLayout/src/main/res/layout/activity_second.xml" value="0.36149277667070884" />
+        <entry key="p070/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="p070/src/main/res/menu/menu.xml" value="0.18958333333333333" />
+        <entry key="p070/src/main/res/menu/menu_animal.xml" value="0.18958333333333333" />
+        <entry key="p070/src/main/res/menu/menu_plant.xml" value="0.18958333333333333" />
       </map>
     </option>
   </component>
