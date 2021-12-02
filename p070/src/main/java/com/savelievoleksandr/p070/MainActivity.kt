@@ -8,8 +8,12 @@ import android.widget.ImageView
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var viewModel: ItemViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -41,55 +45,18 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         var Text = findViewById<TextView>(R.id.DescriptionTextView)
         var Image = findViewById<ImageView>(R.id.IconImageView)
-        Image
-        when (item.itemId) {
-            R.id.menu_crocodile -> {
-                Text.text = "Крокодил"
-                Image.setImageResource(R.drawable.crodile)
+        viewModel = ViewModelProvider(this).get(ItemViewModel::class.java)
+        viewModel.userLiveData.observe(this, Observer {
+            for (id in it) {
+                if (item.itemId == id.name) {
+                    Text.text=id.bio
+                    Image.setImageDrawable(
+                        getDrawable(resources.getIdentifier(id.photo, null, packageName))
+                    )
+                }
             }
         }
-        when (item.itemId) {
-            R.id.menu_lizard -> {
-                Text.text = "Ящерица"
-                Image.setImageResource(R.drawable.lizard)
-            }
-        }
-        when (item.itemId) {
-            R.id.menu_vorona -> {
-                Text.text = "Ворона"
-                Image.setImageResource(R.drawable.vorona)
-            }
-        }
-        when (item.itemId) {
-            R.id.menu_aist -> {
-                Text.text = "Аист"
-                Image.setImageResource(R.drawable.aist)
-            }
-        }
-        when (item.itemId) {
-            R.id.menu_dub -> {
-                Text.text = "Дуб"
-                Image.setImageResource(R.drawable.oak)
-            }
-        }
-        when (item.itemId) {
-            R.id.menu_sosna -> {
-                Text.text = "Сосна"
-                Image.setImageResource(R.drawable.sosna)
-            }
-        }
-        when (item.itemId) {
-            R.id.menu_malina -> {
-                Text.text = "Малина"
-                Image.setImageResource(R.drawable.malina)
-            }
-        }
-        when (item.itemId) {
-            R.id.menu_nevesta -> {
-                Text.text = "Невеста"
-                Image.setImageResource(R.drawable.nevesta)
-            }
-        }
+        )
         return super.onOptionsItemSelected(item)
     }
 }
