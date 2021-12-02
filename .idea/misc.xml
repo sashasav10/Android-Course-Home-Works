@@ -13,6 +13,16 @@
         <entry key="p070/src/main/res/menu/menu.xml" value="0.18958333333333333" />
         <entry key="p070/src/main/res/menu/menu_animal.xml" value="0.18958333333333333" />
         <entry key="p070/src/main/res/menu/menu_plant.xml" value="0.18958333333333333" />
+        <entry key="p10_01/src/main/res/layout/activity_main.xml" value="0.12239583333333333" />
+        <entry key="p10_01/src/main/res/layout/photos.xml" value="0.25" />
+        <entry key="p10_02/src/main/res/layout/activity_main.xml" value="0.12395833333333334" />
+        <entry key="p10_02/src/main/res/layout/orders.xml" value="0.335" />
+        <entry key="p10_03/src/main/res/layout/account.xml" value="0.25" />
+        <entry key="p10_03/src/main/res/layout/activity_main.xml" value="0.12395833333333334" />
+        <entry key="p10_04/src/main/res/layout/activity_main.xml" value="0.12395833333333334" />
+        <entry key="p10_04/src/main/res/layout/transaction.xml" value="0.25" />
+        <entry key="p10_05/src/main/res/layout/activity_main.xml" value="0.14114583333333333" />
+        <entry key="p10_05/src/main/res/layout/picks.xml" value="0.335" />
       </map>
     </option>
   </component>
