@@ -1,4 +1,4 @@
-package com.savelievoleksandr.scorecounter
+package com.savelievoleksandr.android_course_home_works
 
 import org.junit.Test
 

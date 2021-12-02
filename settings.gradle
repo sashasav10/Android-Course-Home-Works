@@ -8,10 +8,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Android Course Home Works"
 include ':app'
-include ':p061'
-include ':p06'
-include ':p062ConstraintLayout'
-include ':p070'
-include ':p061'
-include ':p06'
-include ':p062ConstraintLayout'
