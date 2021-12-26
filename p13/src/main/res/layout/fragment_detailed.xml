@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/roboto"
-        android:text="10 км на Пн-Сх від Токіо"
+        android:text="@string/location_example"
         android:textColor="#2B2B3D"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/dimageView3"
@@ -27,7 +27,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_time" />
+        app:srcCompat="@drawable/ic_time"
+        android:contentDescription="@string/icon_photo" />
 
     <ImageView
         android:id="@+id/dimageView3"
@@ -37,7 +38,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dimageView2"
-        app:srcCompat="@drawable/ic_location" />
+        app:srcCompat="@drawable/ic_location"
+        android:contentDescription="@string/icon_photo" />
 
     <ImageView
         android:id="@+id/dimageView4"
@@ -46,7 +48,8 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/dtextView6"
         app:layout_constraintTop_toBottomOf="@+id/dtextView6"
-        app:srcCompat="@drawable/ic_quake" />
+        app:srcCompat="@drawable/ic_quake"
+        android:contentDescription="@string/icon_photo" />
 
     <TextView
         android:id="@+id/dtimeTextView"
@@ -54,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/roboto"
-        android:text="22 дні тому"
+        android:text="@string/date_example"
         android:textColor="#2B2B3D"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/dimageView2"
@@ -66,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Інтенсивність"
+        android:text="@string/intense"
         app:layout_constraintStart_toStartOf="@+id/dimageView3"
         app:layout_constraintTop_toBottomOf="@+id/dlocationTextView" />
 
@@ -76,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="42dp"
         android:layout_marginEnd="24dp"
-        android:text="Величина"
+        android:text="@string/intense"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/dtextView5"
         app:layout_constraintTop_toTopOf="@+id/dtextView5" />
@@ -87,7 +90,7 @@
         android:layout_height="22dp"
         android:layout_marginTop="8dp"
         android:background="@color/purple_500"
-        android:text="Сильний"
+        android:text="@string/intense_example"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
@@ -100,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="4.5"
+        android:text="@string/value_example"
         android:textColor="#2B2B3D"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -128,34 +131,36 @@
         app:layout_constraintTop_toBottomOf="@+id/dintenseTextView" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/rec1ImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/rec2ImageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:srcCompat="@drawable/ic_rec1" />
+        app:layout_constraintTop_toBottomOf="@+id/lineView"
+        app:srcCompat="@drawable/ic_rec1"
+        android:contentDescription="@string/recommendation_photo" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/rec2ImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="@+id/rec1ImageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:srcCompat="@drawable/ic_rec2" />
+        app:layout_constraintStart_toEndOf="@+id/rec1ImageView"
+        app:layout_constraintTop_toTopOf="@+id/rec1ImageView"
+        app:srcCompat="@drawable/ic_rec2"
+        android:contentDescription="@string/recommendation_photo" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/recTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:text="ПЕРВИННІ РЕКОМЕНДАЦІЇ"
+        android:text="@string/recommendation_head"
         android:textColor="#2B2B3D"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -163,12 +168,12 @@
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/lineView"
         android:layout_width="32dp"
         android:layout_height="3dp"
         android:layout_marginTop="8dp"
         android:background="#ED3237"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/recTextView"
+        app:layout_constraintTop_toBottomOf="@+id/recTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

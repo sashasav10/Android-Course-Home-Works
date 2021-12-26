@@ -25,6 +25,7 @@ class HomeViewModel : ViewModel() {
             override fun onResponse(call: Call<Quakes>, response: Response<Quakes>) {
                 _quakesLiveData.value = response.body()
             }
+
             override fun onFailure(call: Call<Quakes>, t: Throwable) {
             }
         })

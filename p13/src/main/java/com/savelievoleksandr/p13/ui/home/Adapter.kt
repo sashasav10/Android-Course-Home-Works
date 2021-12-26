@@ -1,63 +1,57 @@
 package com.savelievoleksandr.p13
 
-import android.provider.Settings.Global.getString
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.getColor
 import androidx.recyclerview.widget.RecyclerView
 import com.savelievoleksandr.p13.model.Feature
 import com.savelievoleksandr.p13.model.Quakes
 import com.savelievoleksandr.p13.ui.detailed.DetailedFragment
-import com.savelievoleksandr.p13.ui.home.HomeFragment
-interface OnItemClick {
-    fun onClick(userId: Int)
-}
-class QuakesAdapter(private val quakes: Quakes, val mainActivity: HomeFragment) :
+
+class QuakesAdapter(private val quakes: Quakes) :
     RecyclerView.Adapter<QuakesAdapter.ViewHolder>() {
     var onItemClick: ((Feature) -> Unit)? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.activity_item, parent, false)
-        return ViewHolder(itemView, mainActivity)
+        return ViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         quakes.features?.let { holder.bind(it.get(position)) }
-        holder.itemView.setOnClickListener(object :View.OnClickListener{
+        holder.itemView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                val activity=v!!.context as AppCompatActivity
-                val detailedFragment=DetailedFragment()
-                activity.supportFragmentManager.beginTransaction().replace(R.id.con_main,DetailedFragment.newInstance(quakes.features[0])).addToBackStack(null).commit()
+                val activity = v!!.context as AppCompatActivity
+                activity.supportFragmentManager.beginTransaction()
+                    .replace(
+                        R.id.con_main,
+                        DetailedFragment.newInstance(quakes.features[holder.adapterPosition])
+                    )
+                    .addToBackStack(null).commit()
             }
         })
     }
 
     override fun getItemCount() = quakes.features.size
 
-    inner class ViewHolder(itemView: View, mainActivity: HomeFragment) :
+    inner class ViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
         val timeTextView: TextView = itemView.findViewById(R.id.timeTextView)
         val locationTextView: TextView = itemView.findViewById(R.id.locationTextView)
         val intenseTextView: TextView = itemView.findViewById(R.id.intenseTextView)
         val quakeValueTextView: TextView = itemView.findViewById(R.id.quakeValueTextView)
-//        init {
-//            itemView.setOnClickListener(this)
-////            {
-////                onItemClick?.invoke(quakes.features[adapterPosition])
-////            }
-//        }
 
+        @SuppressLint("ResourceType")
         fun bind(feature: Feature) {
-            timeTextView.text = feature.properties.time.substring(0, 9)
+            timeTextView.text = feature.properties.time.substring(0, 10)
             locationTextView.text = feature.properties.locality
             quakeValueTextView.text = String.format("%.1f", feature.properties.magnitude)
             val dvo = initMagnitude(feature.properties.magnitude)
             intenseTextView.setText(dvo.title)
-            intenseTextView.setBackgroundColor(dvo.color)
+            intenseTextView.setBackgroundResource(dvo.color)
         }
 
         private fun initMagnitude(magnitude: Double): Magnitude {

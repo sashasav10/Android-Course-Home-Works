@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'org.jetbrains.kotlin.android.extensions'
 }
 
 android {
@@ -16,7 +17,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    androidExtensions {
+        experimental = true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -32,6 +35,9 @@ android {
     }
     buildFeatures {
         viewBinding true
+    }
+    dataBinding {
+        enabled true
     }
 }
 

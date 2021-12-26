@@ -80,7 +80,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Downloads/beauty-and-the-beast.jpeg" />
+                                                <entry key="imagePath" value="$USER_HOME$/Downloads/Logo.svg" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -112,7 +112,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="beautyBeast" />
+                                      <entry key="outputName" value="launch_icon" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -297,11 +297,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>

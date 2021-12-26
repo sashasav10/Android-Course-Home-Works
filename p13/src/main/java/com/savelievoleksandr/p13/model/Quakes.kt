@@ -1,14 +1,18 @@
 package com.savelievoleksandr.p13.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class Quakes(
     @SerializedName("features")
     val features: List<Feature>,
     @SerializedName("type")
     val type: String
-)
+) : Parcelable
 
+@Parcelize
 data class Feature(
     @SerializedName("geometry")
     val geometry: Geometry,
@@ -16,15 +20,17 @@ data class Feature(
     val properties: Properties,
     @SerializedName("type")
     val type: String
-)
+) : Parcelable
 
+@Parcelize
 data class Geometry(
     @SerializedName("coordinates")
     val coordinates: List<Double>,
     @SerializedName("type")
     val type: String
-)
+) : Parcelable
 
+@Parcelize
 data class Properties(
     @SerializedName("depth")
     val depth: Double,
@@ -40,4 +46,4 @@ data class Properties(
     val quality: String,
     @SerializedName("time")
     val time: String
-)
+) : Parcelable
