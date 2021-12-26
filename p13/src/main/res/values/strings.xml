@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">p13</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Головна</string>
+    <string name="menu_general">Загальні рекомендації</string>
+    <string name="menu_about">Про нас</string>
+    <string name="menu_detailed">Про нас</string>
+    <string name="very_low_title">Ледь відчутний</string>
+    <string name="weak_title">Слабкий</string>
+    <string name="medium_title">Середній</string>
+    <string name="strong_title">Сильний</string>
+    <string name="very_strong_title">Дуже cильний</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
