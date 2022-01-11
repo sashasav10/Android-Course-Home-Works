@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -10,6 +11,16 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/p06" />
+            <option value="$PROJECT_DIR$/p061" />
+            <option value="$PROJECT_DIR$/p062ConstraintLayout" />
+            <option value="$PROJECT_DIR$/p070" />
+            <option value="$PROJECT_DIR$/p10_01" />
+            <option value="$PROJECT_DIR$/p10_02" />
+            <option value="$PROJECT_DIR$/p10_03" />
+            <option value="$PROJECT_DIR$/p10_04" />
+            <option value="$PROJECT_DIR$/p10_05" />
+            <option value="$PROJECT_DIR$/p11" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

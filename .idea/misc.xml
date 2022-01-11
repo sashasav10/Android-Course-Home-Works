@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
+        <entry key="p06/src/main/res/layout/activity_main.xml" value="0.3527559671429547" />
+        <entry key="p061/src/main/res/drawable/beauty_background.xml" value="0.2609375" />
+        <entry key="p061/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="p062ConstraintLayout/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="p062ConstraintLayout/src/main/res/layout/activity_second.xml" value="0.36149277667070884" />
+        <entry key="p070/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="p070/src/main/res/menu/menu.xml" value="0.18958333333333333" />
+        <entry key="p070/src/main/res/menu/menu_animal.xml" value="0.18958333333333333" />
+        <entry key="p070/src/main/res/menu/menu_plant.xml" value="0.18958333333333333" />
+        <entry key="p10_01/src/main/res/layout/activity_main.xml" value="0.12239583333333333" />
+        <entry key="p10_01/src/main/res/layout/photos.xml" value="0.25" />
+        <entry key="p10_02/src/main/res/layout/activity_main.xml" value="0.12395833333333334" />
+        <entry key="p10_02/src/main/res/layout/orders.xml" value="0.335" />
+        <entry key="p10_03/src/main/res/layout/account.xml" value="0.25" />
+        <entry key="p10_03/src/main/res/layout/activity_main.xml" value="0.12395833333333334" />
+        <entry key="p10_04/src/main/res/layout/activity_main.xml" value="0.12395833333333334" />
+        <entry key="p10_04/src/main/res/layout/transaction.xml" value="0.25" />
+        <entry key="p10_05/src/main/res/layout/activity_main.xml" value="0.14114583333333333" />
+        <entry key="p10_05/src/main/res/layout/picks.xml" value="0.335" />
+        <entry key="p11/src/main/res/layout/activity_hourly.xml" value="0.335" />
+        <entry key="p11/src/main/res/layout/activity_main.xml" value="0.375" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
