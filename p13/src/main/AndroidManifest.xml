@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.savelievoleksandr.p13">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="API_KEY" />
 
     <application
         android:allowBackup="true"
@@ -10,6 +15,12 @@
         android:roundIcon="@mipmap/launch_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidCourseHomeWorks">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="Api_Key" />
+
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -21,6 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

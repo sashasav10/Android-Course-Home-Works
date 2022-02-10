@@ -27,4 +27,6 @@
     <string name="recommendation_head">ПЕРВИННІ РЕКОМЕНДАЦІЇ</string>
     <string name="recommendation_photo">recondation photo</string>
     <string name="icon_photo">icon photo</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
 </resources>
